@@ -1,0 +1,82 @@
+
+<form>
+	<div class="form-group">
+		<div class="tot-firs-class">
+			<br>
+			<span><h3><label>{{ total_firs }}</label></h3></span>
+		</div>
+		
+		<div class="details-class">
+			<br><h4><label >Enter details</label></h4>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.topic" name="topic" id="form1" class="form-control">
+				<label for="form1" >Enter topic</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.subject" name="subject" id="form1" class="form-control">
+				<label for="form1" >Enter subject</label>
+			</div>
+			<div class="md-form">
+				<textarea type="text" [(ngModel)]="fir.description" name="description" id="textareaBasic" class="form-control md-textarea" rows="3"></textarea>
+				<label for="textareaBasic">Enter Description</label>
+			</div>
+		</div>
+		
+		<br>
+		<div class="preparor-class">
+			<h4><label >Preparor</label></h4>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.preparor_name" name="preparor_name" id="form1" class="form-control">
+				<label for="form1" >Enter Name</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.preparor_address" name="preparor_address" id="form1" class="form-control">
+				<label for="form1" >Enter Address</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.preparor_country" name="preparor_country" id="form1" class="form-control">
+				<label for="form1" >Enter Country</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.preparor_phone" name="preparor_phone" id="form1" class="form-control">
+				<label for="form1" >Enter Phone No.</label>
+			</div>	
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.preparor_email" name="preparor_email" id="form1" class="form-control">
+				<label for="form1" >Enter Email</label>
+			</div>
+		</div>
+		
+		<br>
+		<div class="filer-class">
+			<h4><label>Filer</label></h4>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.filer_name" name="filer_name" id="form1" class="form-control">
+				<label for="form1" >Enter Name</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.filer_address" name="filer_address" id="form1" class="form-control">
+				<label for="form1" >Enter Address</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.filer_country" name="filer_country" id="form1" class="form-control">
+				<label for="form1" >Enter Country</label>
+			</div>
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.filer_phone" name="filer_phone" id="form1" class="form-control">
+				<label for="form1" >Enter Phone No.</label>
+			</div>	
+			<div class="md-form">
+				<input type="text" [(ngModel)]="fir.filer_email" name="filer_email" id="form1" class="form-control">
+				<label for="form1" >Enter Email</label>
+			</div>
+		</div>
+
+		<br>
+		<div class="submit-buttons">
+			<button (click)="submitFirIPFS()" type="submit" class="btn btn-primary">Submit</button>
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			<button (click)="resetForm()" type="button" class="btn btn-danger">Reset</button>
+		</div>
+	</div>
+</form>
